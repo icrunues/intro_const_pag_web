@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f8ec;
+    color: #183d2d;
+    line-height: 1.7;
+}
+
+#cabecalho {
+    padding: 65px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #087f5b, #007f91);
+    border-bottom: 7px solid #ffca3a;
+}
+
+#cabecalho h1 {
+    margin: 0;
+    font-size: clamp(32px, 6vw, 54px);
+}
+
+#cabecalho p {
+    font-size: 20px;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 15px;
+    background-color: #07543d;
+    text-align: center;
+}
+
+#menu a {
+    display: inline-block;
+    margin: 5px 12px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #ffdf70;
+    text-decoration: underline;
+}
+
+#conteudo {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+#inicio {
+    position: static;
+    margin-bottom: 35px;
+    padding: 30px;
+    background-color: #fff7d6;
+    border-left: 7px solid #e8ad00;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #076347;
+}
+
+.lista-destinos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.destino {
+    position: relative;
+    flex: 1 1 280px;
+    min-width: 0;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #cce3d3;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px #183d2d14;
+}
+
+.espaco-foto {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #c5edb7, #a6e4eb);
+    color: #174f40;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px solid #ffca3a;
+}
+
+.espaco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.espaco-foto.com-imagem {
+    padding: 0;
+}
+
+.texto-destino {
+    padding: 22px;
+}
+
+.texto-destino h3 {
+    margin-top: 0;
+    color: #007c83;
+    font-size: 24px;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 5px 12px;
+    background-color: #ffca3a;
+    color: #3e3400;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#comparacao {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 16px;
+    border: 1px solid #cce3d3;
+    text-align: left;
+}
+
+th {
+    background-color: #087f5b;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf8e8;
+}
+
+#rodape {
+    padding: 30px 20px 90px;
+    background-color: #07543d;
+    color: white;
+    text-align: center;
+}
+
+#rodape a {
+    color: #ffdf70;
+}
+
+#voltar-topo {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 20;
+}
+
+#voltar-topo a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #ffca3a;
+    color: #263b20;
+    border: 2px solid #07543d;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus-visible {
+    outline: 3px solid #ed9200;
+    outline-offset: 4px;
+}
